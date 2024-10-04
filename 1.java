@@ -539,4 +539,61 @@ StringBuilder result = new StringBuilder();
                 result.append(ch);
             }
         }
-        return result.toString();
+return result.toString();
+
+
+
+// Find the largest word in a String
+String[] words = str.split(" ");  // Split the string by spaces
+String largestWord = "";
+
+for (String word : words) {
+    if (word.length() > largestWord.length()) {
+        largestWord = word;
+    }
+}
+
+
+// Write a program to sort characters in a string
+char[] charArray = str.toCharArray();
+        
+        // Sort the character array
+        Arrays.sort(charArray);
+        
+        // Convert the sorted character array back into a string
+        return new String(charArray);
+
+
+
+// find numner of words
+int n = str.length();
+    int spaces = 0;
+
+    for (int i = 0; i < n; i++) {
+      if (str.charAt(i) == ' ')
+        spaces = spaces + 1;
+    }
+
+    System.out.print("Number of words are ");
+    System.out.print(spaces + 1);
+
+
+
+// concatenate
+String str1 = "Hello";
+String str2 = "World";
+
+str1 = str1+ str2;
+
+
+// reverse words in string
+StringBuilder result = new StringBuilder();
+        
+// Step 1: Reverse the order of words
+for (int i = words.length - 1; i >= 0; i--) {
+    result.append(words[i]).append(" ");
+}
+
+
+// find in string
+return str.indexOf(subStr);
